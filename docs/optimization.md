@@ -60,3 +60,6 @@ clock_t start = clock();
 // your matrix multiply code
 clock_t end = clock();
 double time_spent = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+## Naive Matmul (no cache boosts, ran on 25th Aug)
+Time taken: 281.31 seconds
