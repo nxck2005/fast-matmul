@@ -14,9 +14,9 @@ float* matmul (float* A, float* B, float* C, int m, int n, int k) {
 }
 
 int main() {
-    int m = 8192;
-    int n = 8192;
-    int k = 8192;
+    int m = 2048;
+    int n = 2048;
+    int k = 2048;
     
     float* A = malloc(m * n * sizeof(float));
     float* B = malloc(n * k * sizeof(float));
