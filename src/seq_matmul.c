@@ -3,6 +3,7 @@
 #include <time.h>
 
 // changed to an i k j loop for cache familiarity
+// compile using g -O3 seq_matmul.c -o ./bin/seqmatmul
 float* matmul (float* A, float* B, float* C, int m, int n, int k) {
     for (int i = 0; i < m; i++) {
         for (int offset = 0; offset < n; offset++) {
