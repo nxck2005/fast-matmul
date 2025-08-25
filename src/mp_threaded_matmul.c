@@ -4,7 +4,7 @@
 #include <omp.h>
 
 // changed to an i k j loop for cache familiarity + threading using openmp
-// compile using g -O3 mp_threaded_matmul.c -o ./bin/mpthreadedmatmul
+// compile using g -O3 -fopenmp mp_threaded_matmul.c -o ./bin/mpthreadedmatmul
 float* matmul (float* A, float* B, float* C, int m, int n, int k) {
     #pragma omp parallel for
     for (int i = 0; i < m; i++) {
@@ -18,9 +18,9 @@ float* matmul (float* A, float* B, float* C, int m, int n, int k) {
 }
 
 int main() {
-    int m = 2048;
-    int n = 2048;
-    int k = 2048;
+    int m = 8192;
+    int n = 8192;
+    int k = 8192;
     
     float* A = malloc(m * n * sizeof(float));
     float* B = malloc(n * k * sizeof(float));
