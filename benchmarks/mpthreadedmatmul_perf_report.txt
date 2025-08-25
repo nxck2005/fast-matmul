@@ -1,0 +1,30 @@
+
+ Performance counter stats for './mpthreadedmatmul':
+
+        533,168.25 msec task-clock:u                     #   19.150 CPUs utilized             
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+           196,725      page-faults:u                    #  368.974 /sec                      
+   720,202,216,623      cpu_atom/instructions/u          #    0.81  insn per cycle              (19.13%)
+ 1,301,165,120,554      cpu_core/instructions/u          #    1.38  insn per cycle              (67.19%)
+   892,968,972,286      cpu_atom/cycles/u                #    1.675 GHz                         (19.14%)
+   942,684,844,092      cpu_core/cycles/u                #    1.768 GHz                         (67.19%)
+    90,051,144,273      cpu_atom/branches/u              #  168.898 M/sec                       (19.14%)
+   164,352,719,692      cpu_core/branches/u              #  308.257 M/sec                       (67.19%)
+        43,891,744      cpu_atom/branch-misses/u         #    0.05% of all branches             (19.14%)
+        85,163,790      cpu_core/branch-misses/u         #    0.05% of all branches             (67.19%)
+             TopdownL1 (cpu_core)                 #     52.2 %  tma_backend_bound      
+                                                  #      1.0 %  tma_bad_speculation    
+                                                  #      7.9 %  tma_frontend_bound     
+                                                  #     39.0 %  tma_retiring             (67.19%)
+                                                  #      7.8 %  tma_bad_speculation    
+                                                  #     16.1 %  tma_retiring             (19.15%)
+                                                  #     73.1 %  tma_backend_bound      
+                                                  #      3.0 %  tma_frontend_bound       (16.41%)
+
+      27.840965957 seconds time elapsed
+
+     525.468648000 seconds user
+       0.848735000 seconds sys
+
+

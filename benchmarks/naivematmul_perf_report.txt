@@ -1,0 +1,30 @@
+
+ Performance counter stats for './naivematmul':
+
+        272,598.65 msec task-clock:u                     #    1.000 CPUs utilized             
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+           262,200      page-faults:u                    #  961.854 /sec                      
+ 1,753,302,185,585      cpu_atom/instructions/u          #    2.20  insn per cycle              (0.04%)
+ 3,859,317,442,793      cpu_core/instructions/u          #    3.18  insn per cycle              (99.93%)
+   797,844,951,406      cpu_atom/cycles/u                #    2.927 GHz                         (0.04%)
+ 1,211,753,008,100      cpu_core/cycles/u                #    4.445 GHz                         (99.93%)
+   243,867,284,409      cpu_atom/branches/u              #  894.602 M/sec                       (0.04%)
+   552,194,670,659      cpu_core/branches/u              #    2.026 G/sec                       (99.93%)
+        40,251,368      cpu_atom/branch-misses/u         #    0.02% of all branches             (0.04%)
+        71,525,438      cpu_core/branch-misses/u         #    0.01% of all branches             (99.93%)
+             TopdownL1 (cpu_core)                 #     56.8 %  tma_backend_bound      
+                                                  #      0.8 %  tma_bad_speculation    
+                                                  #      1.5 %  tma_frontend_bound     
+                                                  #     40.9 %  tma_retiring             (99.93%)
+                                                  #      0.6 %  tma_bad_speculation    
+                                                  #     42.4 %  tma_retiring             (0.04%)
+                                                  #     57.0 %  tma_backend_bound      
+                                                  #      0.0 %  tma_frontend_bound       (0.04%)
+
+     272.704497703 seconds time elapsed
+
+     271.434438000 seconds user
+       0.439109000 seconds sys
+
+

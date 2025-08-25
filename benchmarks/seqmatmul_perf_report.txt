@@ -1,0 +1,30 @@
+
+ Performance counter stats for './seqmatmul':
+
+        108,719.50 msec task-clock:u                     #    0.999 CPUs utilized             
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+           262,201      page-faults:u                    #    2.412 K/sec                     
+   454,809,108,714      cpu_atom/instructions/u          #    1.38  insn per cycle              (0.02%)
+ 1,110,810,004,650      cpu_core/instructions/u          #    2.30  insn per cycle              (99.96%)
+   330,365,559,384      cpu_atom/cycles/u                #    3.039 GHz                         (0.02%)
+   483,209,312,002      cpu_core/cycles/u                #    4.445 GHz                         (99.96%)
+    57,647,542,102      cpu_atom/branches/u              #  530.241 M/sec                       (0.02%)
+   140,026,688,348      cpu_core/branches/u              #    1.288 G/sec                       (99.96%)
+        32,297,965      cpu_atom/branch-misses/u         #    0.06% of all branches             (0.03%)
+        71,497,429      cpu_core/branch-misses/u         #    0.05% of all branches             (99.96%)
+             TopdownL1 (cpu_core)                 #     66.5 %  tma_backend_bound      
+                                                  #      0.8 %  tma_bad_speculation    
+                                                  #      1.9 %  tma_frontend_bound     
+                                                  #     30.7 %  tma_retiring             (99.96%)
+                                                  #     -2.1 %  tma_bad_speculation    
+                                                  #     27.7 %  tma_retiring             (0.03%)
+                                                  #     74.3 %  tma_backend_bound      
+                                                  #      0.0 %  tma_frontend_bound       (0.02%)
+
+     108.777933319 seconds time elapsed
+
+     108.077207000 seconds user
+       0.337308000 seconds sys
+
+
