@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+// changed to an i k j loop for cache familiarity
 float* matmul (float* A, float* B, float* C, int m, int n, int k) {
     for (int i = 0; i < m; i++) {
-        for (int j = 0; j < k; j++) {
-            for (int offset = 0; offset < n; offset++) {
-                C[i * k + j] += A[i * n + offset] * B[j * k + offset];
+        for (int offset = 0; offset < n; offset++) {
+            for (int j = 0; j < k; j++) {
+                C[i * k + j] += A[i * n + offset] * B[offset * k + j];
             }
         }
     }
