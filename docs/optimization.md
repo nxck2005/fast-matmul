@@ -61,5 +61,13 @@ clock_t start = clock();
 clock_t end = clock();
 double time_spent = ((double)(end - start)) / CLOCKS_PER_SEC;
 
+# Results
+
 ## Naive Matmul (no cache boosts, ran on 25th Aug)
-Time taken: 281.31 seconds
+Time taken: 272.70 seconds
+
+## Cache Friendly Matmul (25th Aug)
+Time taken: 108.78 seconds
+
+## Multithreaded + Cache friendly Matmul (25th Aug)
+Time taken: 27.84 seconds
