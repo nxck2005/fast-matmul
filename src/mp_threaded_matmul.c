@@ -35,6 +35,8 @@ int main() {
     clock_t end = clock();
 
     double time_taken = ((double)(end - start)) / CLOCKS_PER_SEC;
+
+    // print time taken for matmul func
     printf("Time taken: %.2f seconds\n", time_taken);
 
     free(A);
